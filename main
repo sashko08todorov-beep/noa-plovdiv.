@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOA bar&brunch | Пловдив</title>
+    <style>
+        :root { --gold: #c5a059; --dark: #111; --gray: #222; }
+        body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background: var(--dark); color: white; scroll-behavior: smooth; }
+        
+        /* Начална секция */
+        .hero { 
+            height: 90vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{8CDBFDCE-699C-4555-B85F-8D95F064316E}.jpg'); 
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        .hero h1 { font-size: clamp(3rem, 10vw, 6rem); color: var(--gold); margin: 0; letter-spacing: 15px; }
+        .hero p { font-size: 1.2rem; letter-spacing: 3px; margin-bottom: 30px; }
+
+        /* Стил за бутони */
+        .btn {
+            background: var(--gold); color: black; padding: 18px 40px; 
+            text-decoration: none; font-weight: bold; border-radius: 50px;
+            transition: transform 0.3s ease; display: inline-block;
+        }
+        .btn:hover { transform: scale(1.05); }
+
+        /* Контейнер за менюто */
+        .container { max-width: 1200px; margin: 80px auto; padding: 20px; }
+        .section-title { text-align: center; color: var(--gold); font-size: 2.5rem; margin-bottom: 50px; border-bottom: 1px solid var(--gold); display: inline-block; width: 100%; padding-bottom: 10px; }
+
+        /* Карти за ястията */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: var(--gray); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-content h3 { color: var(--gold); margin-top: 0; }
+        .price { font-size: 1.2rem; font-weight: bold; color: white; }
+
+        /* Социални мрежи */
+        .social-section { text-align: center; padding: 60px 20px; background: #0a0a0a; }
+        .social-icons a { color: var(--gold); font-size: 1.5rem; text-decoration: none; margin: 0 20px; border: 1px solid var(--gold); padding: 10px 25px; border-radius: 5px; }
+        .social-icons a:hover { background: var(--gold); color: black; }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>NOA</h1>
+    <p>BAR & BRUNCH | PLOVDIV</p>
+    <a href="tel:0895707707" class="btn">ЗАПАЗИ МАСА</a>
+</section>
+
+<div class="container">
+    <h2 class="section-title">ИЗБРАНО ОТ КУХНЯТА</h2>
+    <div class="grid">
+        <!-- Ястие 1 -->
+        <div class="card">
+            <img src="{4B708A3D-AA51-44DD-9BF3-9239C68C1E0F}.jpg" alt="Tomahawk">
+            <div class="card-content">
+                <h3>Кралски Котлет Томахоук</h3>
+                <p>Със запечени картофи и билки.</p>
+                <span class="price">15,33 €</span>
+            </div>
+        </div>
+        <!-- Ястие 2 -->
+        <div class="card">
+            <img src="{B03F623A-02A3-4819-B129-0C98DE61A084}.jpg" alt="Burata">
+            <div class="card-content">
+                <h3>Бурата с Розов Домат</h3>
+                <p>Свежа бурата с прошуто и ядки.</p>
+                <span class="price">11,03 €</span>
+            </div>
+        </div>
+        <!-- Ястие 3 -->
+        <div class="card">
+            <img src="{A5C67176-4081-4B28-AB97-E36C6362E1F0}.jpg" alt="Desserts">
+            <div class="card-content">
+                <h3>Брънч & Десерти</h3>
+                <p>Павлова, Макарони и селекция кафе.</p>
+                <span class="price">от 7,97 €</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="social-section">
+    <h2 style="margin-bottom: 40px;">ПОСЛЕДВАЙТЕ НИ</h2>
+    <div class="social-icons">
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FACEBOOK</a>
+    </div>
+</section>
+
+<footer>
+    <p>📍 Пловдив, Район Западен, ул. Септември</p>
+    
+    <p>© 2024 NOA bar&brunch. Всички права запазени.</p>
+</footer>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOA bar&brunch | Пловдив</title>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Header */
+        header { background: var(--dark); color: white; padding: 60px 20px; text-align: center; }
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 4px; color: var(--gold); }
+        header p { font-style: italic; opacity: 0.8; }
+
+        /* Menu Section */
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .menu-category { margin-top: 40px; border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
+        .menu-item { display: flex; justify-content: space-between; margin: 15px 0; align-items: baseline; }
+        .menu-item h3 { margin: 0; font-size: 1.1rem; }
+        .price { font-weight: bold; color: var(--gold); min-width: 80px; text-align: right; }
+        .description { font-size: 0.9rem; color: #666; display: block; max-width: 80%; }
+
+        /* CTA Button */
+        .btn-call { display: block; width: fit-content; margin: 40px auto; background: var(--gold); color: white; 
+                    padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; text-align: center; padding: 40px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NOA</h1>
+    <p>bar & brunch | Пловдив, ул. Септември</p>
+</header>
+
+<div class="container">
+    <h2 class="menu-category">Основни ястия</h2>
+    
+    <div class="menu-item">
+        <div>
+            <h3>Кралски Котлет Томахоук</h3>
+            <span class="description">С намачкани пресни картофи с масло и балкански билки - 450г</span>
+        </div>
+        <span class="price">15,33 €</span>
+    </div>
+
+    <div class="menu-item">
+        <div>
+            <h3>Сьомга Рустик</h3>
+            <span class="description">Сочно филе от сьомга с черен ориз, пюре от грах и сос холандес - 350г</span>
+        </div>
+        <span class="price">18,40 €</span>
+    </div>
+
+    <h2 class="menu-category">Десерти</h2>
+    
+    <div class="menu-item">
+        <div>
+            <h3>Сан Себастиян</h3>
+            <span class="description">Печен чийзкейк по оригинална рецепта - 200г</span>
+        </div>
+        <span class="price">7,97 €</span>
+    </div>
+
+    <div class="menu-item">
+        <div>
+            <h3>Кето Пистачио</h3>
+            <span class="description">Блат с бадемово брашно, шоколадов ганаж без захар и 100% паста Пистачио</span>
+        </div>
+        <span class="price">9,19 €</span>
+    </div>
+
+    
+</div>
+
+<footer>
+    <p>Работно време: Всеки ден до 00:00 ч.</p>
+    <p>📍 Пловдив, ул. Септември (Район Западен)</p>
+</footer>
+
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOA bar&brunch | Пловдив</title>
+    <style>
+        :root { --gold: #c5a059; --dark: #111; --gray: #222; }
+        body { font-family: 'Helvetica Neue', sans-serif; margin: 0; background: var(--dark); color: white; scroll-behavior: smooth; }
+        
+        /* Начална секция */
+        .hero { 
+            height: 90vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{8CDBFDCE-699C-4555-B85F-8D95F064316E}.jpg'); 
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+        }
+        .hero h1 { font-size: clamp(3rem, 10vw, 6rem); color: var(--gold); margin: 0; letter-spacing: 15px; }
+        .hero p { font-size: 1.2rem; letter-spacing: 3px; margin-bottom: 30px; }
+
+        /* Стил за бутони */
+        .btn {
+            background: var(--gold); color: black; padding: 18px 40px; 
+            text-decoration: none; font-weight: bold; border-radius: 50px;
+            transition: transform 0.3s ease; display: inline-block;
+        }
+        .btn:hover { transform: scale(1.05); }
+
+        /* Контейнер за менюто */
+        .container { max-width: 1200px; margin: 80px auto; padding: 20px; }
+        .section-title { text-align: center; color: var(--gold); font-size: 2.5rem; margin-bottom: 50px; border-bottom: 1px solid var(--gold); display: inline-block; width: 100%; padding-bottom: 10px; }
+
+        /* Карти за ястията */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: var(--gray); border-radius: 15px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-content h3 { color: var(--gold); margin-top: 0; }
+        .price { font-size: 1.2rem; font-weight: bold; color: white; }
+
+        /* Социални мрежи */
+        .social-section { text-align: center; padding: 60px 20px; background: #0a0a0a; }
+        .social-icons a { color: var(--gold); font-size: 1.5rem; text-decoration: none; margin: 0 20px; border: 1px solid var(--gold); padding: 10px 25px; border-radius: 5px; }
+        .social-icons a:hover { background: var(--gold); color: black; }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; opacity: 0.7; }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>NOA</h1>
+    <p>BAR & BRUNCH | PLOVDIV</p>
+    <a href="tel:0895707707" class="btn">ЗАПАЗИ МАСА</a>
+</section>
+
+<div class="container">
+    <h2 class="section-title">ИЗБРАНО ОТ КУХНЯТА</h2>
+    <div class="grid">
+        <!-- Ястие 1 -->
+        <div class="card">
+            <img src="{4B708A3D-AA51-44DD-9BF3-9239C68C1E0F}.jpg" alt="Tomahawk">
+            <div class="card-content">
+                <h3>Кралски Котлет Томахоук</h3>
+                <p>Със запечени картофи и билки.</p>
+                <span class="price">15,33 €</span>
+            </div>
+        </div>
+        <!-- Ястие 2 -->
+        <div class="card">
+            <img src="{B03F623A-02A3-4819-B129-0C98DE61A084}.jpg" alt="Burata">
+            <div class="card-content">
+                <h3>Бурата с Розов Домат</h3>
+                <p>Свежа бурата с прошуто и ядки.</p>
+                <span class="price">11,03 €</span>
+            </div>
+        </div>
+        <!-- Ястие 3 -->
+        <div class="card">
+            <img src="{A5C67176-4081-4B28-AB97-E36C6362E1F0}.jpg" alt="Desserts">
+            <div class="card-content">
+                <h3>Брънч & Десерти</h3>
+                <p>Павлова, Макарони и селекция кафе.</p>
+                <span class="price">от 7,97 €</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="social-section">
+    <h2 style="margin-bottom: 40px;">ПОСЛЕДВАЙТЕ НИ</h2>
+    <div class="social-icons">
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FACEBOOK</a>
+    </div>
+</section>
+
+<footer>
+    <p>📍 Пловдив, Район Западен, ул. Септември</p>
+    <p>© 2024 NOA bar&brunch. Всички права запазени.</p>
+</footer>
+
+</body>
+</html>
